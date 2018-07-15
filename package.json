@@ -1,6 +1,6 @@
 {
   "name": "react-large-select",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/LargeSelect.js",
   "types": "./dist/LargeSelect.d.ts",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "example": "parcel example/index.html --no-cache"
   },
   "files": [
-    "./dist/**/*"
+    "dist/**/*"
   ],
   "devDependencies": {
     "@types/react": "^16.4.6",
