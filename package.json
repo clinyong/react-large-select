@@ -1,0 +1,30 @@
+{
+  "name": "react-large-select",
+  "version": "1.0.0",
+  "main": "./dist/LargeSelect.js",
+  "types": "./dist/LargeSelect.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && npm run buildJS && npm run buildCSS",
+    "buildJS": "tsc",
+    "buildCSS": "lessc src/index.less dist/index.css",
+    "prepublishOnly": "npm run build",
+    "example": "parcel example/index.html --no-cache"
+  },
+  "files": [
+    "./dist/**/*"
+  ],
+  "devDependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "less": "^3.7.1",
+    "parcel-bundler": "^1.9.6",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "@clinyong/react-scroll-list": "^1.0.1",
+    "lodash.throttle": "^4.1.1"
+  }
+}
